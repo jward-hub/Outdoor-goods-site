@@ -1,185 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Backyard Living Co.</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Outdoor Living Deals</title>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #2c3e50;
-            color: white;
-            padding: 1em 2em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .hero {
-            background-image: url('https://images.unsplash.com/photo-1618220179428-22790df7cd1e');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
-        .hero h1 {
-            font-size: 3em;
-            margin-bottom: 0.5em;
-        }
-        .hero p {
-            font-size: 1.5em;
-            margin-bottom: 1em;
-        }
-        .hero a {
-            background: #e67e22;
-            color: white;
-            padding: 15px 30px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-        .section {
-            padding: 60px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .categories, .products {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: white;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .card a {
-            display: inline-block;
-            margin-top: 10px;
-            color: #e67e22;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .email-signup {
-            background: #ecf0f1;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .email-signup input[type="email"] {
-            padding: 10px;
-            width: 300px;
-            max-width: 90%;
-            margin-right: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .email-signup button {
-            padding: 10px 20px;
-            background: #27ae60;
-            color: white;
-            border: none;
-            border-radius: 4px;
-        }
-        footer {
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; color: #333; }
+        header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        .hero { padding: 40px 20px; background: url('https://images.unsplash.com/photo-1523978591478-c753949ff840?fit=crop&w=1650&q=80') no-repeat center center/cover; color: white; text-align: center; }
+        .hero h1 { font-size: 3em; }
+        .section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 5px; }
+        .card h3 { margin-top: 10px; }
+        .btn { display: inline-block; margin-top: 10px; padding: 10px 15px; background: #27ae60; color: white; text-decoration: none; border-radius: 5px; }
+        footer { background: #2c3e50; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2em; }
         }
     </style>
 </head>
 <body>
     <header>
-        <div><strong>Backyard Living Co.</strong></div>
+        <h1>Outdoor Living Deals</h1>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">Guides</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#grills">Grills</a>
+            <a href="#gazebos">Gazebos</a>
         </nav>
     </header>
+
     <section class="hero">
-        <h1>Transform Your Backyard Into a Relaxing Retreat</h1>
-        <p>Shop the best grills, patio lights, and outdoor living essentials — all handpicked for comfort, quality, and style.</p>
-        <a href="#">Browse Best Sellers</a>
+        <h1>Upgrade Your Backyard</h1>
+        <p>Find the best outdoor products for your patio, garden, and grill — all in one place.</p>
     </section>
-    <section class="section categories">
-        <div class="card">
-            <h3>Grills & Outdoor Kitchens</h3>
-            <p>Smokers, gas grills, accessories</p>
-            <a href="#">Shop Grills</a>
-        </div>
-        <div class="card">
-            <h3>Patio Lighting</h3>
-            <p>String lights, solar lights, lanterns</p>
-            <a href="#">Shop Patio Lights</a>
-        </div>
-        <div class="card">
-            <h3>Outdoor Furniture & Decor</h3>
-            <p>Chairs, tables, rugs, and fire pits</p>
-            <a href="#">Shop Furniture</a>
-        </div>
-        <div class="card">
-            <h3>Dining & Entertaining</h3>
-            <p>BBQ tools, drinkware, tableware</p>
-            <a href="#">Shop Entertaining</a>
-        </div>
-    </section>
-    <section class="section">
-        <h2>🔥 Summer 2025 Must-Haves</h2>
-        <div class="products">
+
+    <section class="section" id="gazebos">
+        <h2>Top Gazebos</h2>
+        <div class="grid">
             <div class="card">
-                <p><strong>Deluxe Gas Grill</strong></p>
-                <p>⭐⭐⭐⭐☆</p>
-                <a href="#">View on Amazon</a>
+                <img src="https://images.unsplash.com/photo-1560180474-e8563fd75bab?fit=crop&w=800&q=80" alt="Gazebo">
+                <h3>Heavy-Duty Gazebo 1</h3>
+                <a href="https://amzn.to/4kL3XWy" class="btn" target="_blank">View on Amazon</a>
             </div>
             <div class="card">
-                <p><strong>LED Patio String Lights</strong></p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <a href="#">View on Amazon</a>
+                <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?fit=crop&w=800&q=80" alt="Gazebo">
+                <h3>Backyard Gazebo 2</h3>
+                <a href="https://amzn.to/45v5tHH" class="btn" target="_blank">View on Amazon</a>
             </div>
             <div class="card">
-                <p><strong>Outdoor Lounge Chair Set</strong></p>
-                <p>⭐⭐⭐⭐☆</p>
-                <a href="#">View on Amazon</a>
-            </div>
-            <div class="card">
-                <p><strong>BBQ Tool Set</strong></p>
-                <p>⭐⭐⭐⭐⭐</p>
-                <a href="#">View on Amazon</a>
+                <img src="https://images.unsplash.com/photo-1583227266040-6a6a6d140398?fit=crop&w=800&q=80" alt="Gazebo">
+                <h3>All-Weather Gazebo 3</h3>
+                <a href="https://amzn.to/45VBfxu" class="btn" target="_blank">View on Amazon</a>
             </div>
         </div>
     </section>
-    <section class="email-signup">
-        <h2>Get Our FREE Backyard Setup Checklist</h2>
-        <p>Enter your email to get a free 1-page checklist to design your dream outdoor space.</p>
-        <input type="email" placeholder="Your Email">
-        <button>Submit</button>
+
+    <section class="section" id="grills">
+        <h2>Top Grills</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1598971683445-34c8f6e20d96?fit=crop&w=800&q=80" alt="Grill">
+                <h3>Gas BBQ Grill 1</h3>
+                <a href="https://amzn.to/4jOeyyv" class="btn" target="_blank">View on Amazon</a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1604372993271-05d29b0a8c42?fit=crop&w=800&q=80" alt="Grill">
+                <h3>Portable Grill 2</h3>
+                <a href="https://amzn.to/3HJnLLu" class="btn" target="_blank">View on Amazon</a>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1556912167-f556f1f39df1?fit=crop&w=800&q=80" alt="Grill">
+                <h3>Stainless Steel Grill 3</h3>
+                <a href="https://amzn.to/3FXR8cg" class="btn" target="_blank">View on Amazon</a>
+            </div>
+        </div>
     </section>
+
     <footer>
-        <p>&copy; 2025 Backyard Living Co.</p>
-        <p>As an Amazon Associate, we earn from qualifying purchases.</p>
-        <p><a href="#" style="color:white;">Privacy Policy</a> | <a href="#" style="color:white;">Contact</a></p>
+        <p>&copy; 2025 Outdoor Living Deals. This site contains affiliate links to Amazon.com</p>
     </footer>
 </body>
 </html>
